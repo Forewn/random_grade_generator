@@ -58,7 +58,9 @@ int main(){
 		{
 			notas_D01[i][j] = rand() % 20 + 1;
 			acum += notas_D01[i][j];
-
+			/*Here's the problem, I have used to for to run over the 20 students and the 3 notes
+			but the next for tries to check that the notes do not repeats twice on the same test
+			I'm still trying to figure out how to do it*/
 			for(int k = i + 1; k < SD01; k++)
 			{
 				do
